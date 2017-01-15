@@ -1,0 +1,424 @@
+0    INFO  (main) [   ] o.e.j.u.log Logging initialized @364ms
+200  INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+220  INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/contexts/] at interval 0
+503  INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+512  WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@6fc6f14e{/solr,file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp/,STARTING}{/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp} has uncovered http methods for path: /
+521  INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=120694604@731a74c
+542  INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+542  INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr2
+543  INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr2'
+543  INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+543  INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr2
+559  INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkCredentialsProvider
+592  INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+694  INFO  (zkCallback-1-thread-1) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@73399552 name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+694  INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+694  INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkACLProvider
+721  INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+725  INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr2/solr.xml
+820  INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr2
+854  INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 688726285
+855  INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr2]
+855  WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr2/lib to classpath: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr2/lib
+869  INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,connectionsEvictorSleepDelay : 5000,maxConnectionIdleTime : 40000,
+1042 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+1044 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+1046 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+1047 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:2181,localhost:2182,localhost:2183
+1059 INFO  (main) [   ] o.a.s.c.ZkController Added new OnReconnect listener org.apache.solr.cloud.ZkController$$Lambda$4/306612792@59309333
+1061 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+1105 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@731d5dff name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+1106 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+1284 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updating cluster state from ZooKeeper... 
+1287 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Loaded empty cluster properties
+1292 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+1319 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=null) closing
+1341 INFO  (main) [   ] o.a.s.c.LeaderElector Joined leadership election with path: /overseer_elect/election/169345243585708041-192.168.1.27:8984_solr-n_0000000048
+1346 INFO  (main) [   ] o.a.s.c.LeaderElector Watching path /overseer_elect/election/169345243585708040-192.168.1.27:8983_solr-n_0000000047 to know if I could be the leader
+1347 INFO  (main) [   ] o.a.s.c.ZkController Publish node=192.168.1.27:8984_solr as DOWN
+1403 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.1.27:8984_solr
+1403 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /live_nodes/192.168.1.27:8984_solr
+1458 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [1])
+1461 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+1591 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+1591 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+1664 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr2
+1666 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions
+1717 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Users/mmarzougui/Documents/tools/solr-6.2.1/server
+1717 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+1731 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6fc6f14e{/solr,file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp}
+1737 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@45ca843{HTTP/1.1,[http/1.1]}{0.0.0.0:8984}
+1738 INFO  (main) [   ] o.e.j.s.Server Started @2105ms
+7085 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [2])
+7100 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (3)
+12917 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+12938 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (4)
+37689 INFO  (qtp12209492-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484521151529} status=0 QTime=54
+37756 INFO  (qtp12209492-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484521151617} status=0 QTime=36
+37801 INFO  (qtp12209492-17) [   ] o.a.s.c.ZkController Added new OnReconnect listener org.apache.solr.handler.admin.ZookeeperInfoHandler$PagedCollectionSupport@58be163a
+37994 INFO  (qtp12209492-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={wt=json&_=1484521151699} status=0 QTime=193
+38008 INFO  (qtp12209492-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/live_nodes&wt=json&_=1484521151898} status=0 QTime=8
+38033 INFO  (qtp12209492-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/clusterstate.json&view=graph&detail=true&wt=json&_=1484521151910} status=0 QTime=20
+49488 INFO  (qtp12209492-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484521163384} status=0 QTime=0
+49554 INFO  (qtp12209492-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484521163423} status=0 QTime=29
+49755 INFO  (qtp12209492-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={wt=json&_=1484521163480} status=0 QTime=173
+49775 INFO  (qtp12209492-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/live_nodes&wt=json&_=1484521163660} status=0 QTime=10
+49803 INFO  (qtp12209492-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/clusterstate.json&view=graph&detail=true&wt=json&_=1484521163678} status=0 QTime=20
+62626 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [4])
+62746 WARN  (zkCallback-4-thread-3-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@731d5dff name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:Disconnected type:None path:null path:null type:None
+62746 WARN  (zkCallback-4-thread-3-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ConnectionManager zkClient has disconnected
+63175 WARN  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@731d5dff name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:Expired type:None path:null path:null type:None
+63175 WARN  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ConnectionManager Our previous ZooKeeper session was expired. Attempting to reconnect to recover relationship with ZooKeeper...
+63175 WARN  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.DefaultConnectionStrategy Connection expired - starting a new one...
+63177 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+63204 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr-EventThread) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@731d5dff name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+63204 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+63204 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ConnectionManager Connection with ZooKeeper reestablished.
+63204 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.ZkController ZooKeeper session re-connected ... refreshing core states after session expiration.
+63204 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updating cluster state from ZooKeeper... 
+63207 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Loaded empty cluster properties
+64243 WARN  (zkCallback-4-thread-2-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.LeaderElector Our node is no longer in line to be leader
+64244 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (0)
+64328 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.ElectionContext Canceling election /overseer_elect/election/169345243585708041-192.168.1.27:8984_solr-n_0000000048
+64352 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.ElectionContext cancelElection did not find election node to remove /overseer_elect/election/169345243585708041-192.168.1.27:8984_solr-n_0000000048
+64431 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.LeaderElector Joined leadership election with path: /overseer_elect/election/241402837565112337-192.168.1.27:8984_solr-n_0000000053
+64519 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.LeaderElector Watching path /overseer_elect/election/241402837565112336-192.168.1.27:8983_solr-n_0000000052 to know if I could be the leader
+64519 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.ZkController Publish node=192.168.1.27:8984_solr as DOWN
+64607 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.1.27:8984_solr
+64608 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.SolrZkClient makePath: /live_nodes/192.168.1.27:8984_solr
+64638 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [0])
+64638 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [0])
+64657 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+64685 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [1])
+64687 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+64722 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (2)
+64723 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.DefaultConnectionStrategy Reconnected to ZooKeeper
+64723 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ConnectionManager Connected:true
+64740 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [2])
+64740 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [2])
+64745 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (3)
+64759 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (3)
+65042 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+65043 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+65045 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (4)
+65051 INFO  (zkCallback-4-thread-9-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (4)
+138770 ERROR (qtp12209492-16) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash22_shard3_replica1]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+138771 INFO  (qtp12209492-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash22_shard3_replica1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=6
+139392 INFO  (zkCallback-4-thread-10-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A collections change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections], has occurred - updating...
+147958 ERROR (qtp12209492-20) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash33_shard3_replica1]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+147962 INFO  (qtp12209492-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash33_shard3_replica1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=4
+148606 INFO  (zkCallback-4-thread-10-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A collections change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections], has occurred - updating...
+165234 ERROR (qtp12209492-12) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash44_shard1_replica2]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+165236 INFO  (qtp12209492-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash44_shard1_replica2&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=2
+165238 ERROR (qtp12209492-14) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash44_shard3_replica2]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+165238 INFO  (qtp12209492-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash44_shard3_replica2&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=1
+165797 INFO  (zkCallback-4-thread-10-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A collections change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections], has occurred - updating...
+176379 ERROR (qtp12209492-14) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash55_shard1_replica1]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+176379 INFO  (qtp12209492-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash55_shard1_replica1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=0
+176394 ERROR (qtp12209492-14) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash55_shard2_replica1]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+176395 INFO  (qtp12209492-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash55_shard2_replica1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=1
+176397 ERROR (qtp12209492-12) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash55_shard3_replica1]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+176398 INFO  (qtp12209492-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash55_shard3_replica1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=1
+176412 ERROR (qtp12209492-14) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash55_shard4_replica1]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+176412 INFO  (qtp12209492-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash55_shard4_replica1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=1
+176992 INFO  (zkCallback-4-thread-10-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A collections change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections], has occurred - updating...
+190806 INFO  (zkCallback-4-thread-10-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A collections change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections], has occurred - updating...
+199070 INFO  (qtp12209492-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484521312828} status=0 QTime=0
+199082 INFO  (qtp12209492-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/live_nodes&wt=json&_=1484521312948} status=0 QTime=9
+199096 INFO  (qtp12209492-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1484521312829} status=0 QTime=23
+199116 INFO  (qtp12209492-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/clusterstate.json&view=graph&detail=true&wt=json&_=1484521312948} status=0 QTime=5
+199146 INFO  (qtp12209492-14) [   ] o.a.s.h.a.CollectionsHandler Invoked Collection Action :list with params action=LIST&wt=json&_=1484521312829 and sendToOCPQueue=true
+199149 INFO  (qtp12209492-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1484521312829} status=0 QTime=32
+206533 INFO  (zkCallback-4-thread-10-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [4])
+206539 INFO  (zkCallback-4-thread-11-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [4])
+206543 INFO  (zkCallback-4-thread-10-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (3)
+206546 INFO  (zkCallback-4-thread-11-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (3)
+206546 INFO  (zkCallback-4-thread-12-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.LeaderElector Watching path /overseer_elect/election/241402837565112334-192.168.1.27:8986_solr-n_0000000051 to know if I could be the leader
+212303 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@45ca843{HTTP/1.1,[http/1.1]}{0.0.0.0:8984}
+212304 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=688726285
+212304 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.1.27:8984_solr as DOWN
+212385 INFO  (zkCallback-4-thread-12-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+212387 WARN  (zkCallback-4-thread-12-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader ZooKeeper watch triggered, but Solr cannot talk to ZK: [KeeperErrorCode = Session expired for /live_nodes]
+212386 INFO  (zkCallback-4-thread-11-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+212389 WARN  (zkCallback-4-thread-11-processing-n:192.168.1.27:8984_solr) [   ] o.a.s.c.c.ZkStateReader ZooKeeper watch triggered, but Solr cannot talk to ZK: [KeeperErrorCode = Session expired for /live_nodes]
+212393 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@6fc6f14e{/solr,null,UNAVAILABLE}{/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp}

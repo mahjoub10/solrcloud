@@ -1,0 +1,252 @@
+INFO  - 2017-01-15 14:31:32.361; [   ] org.eclipse.jetty.util.log.Log; Logging initialized @350ms
+INFO  - 2017-01-15 14:31:32.566; [   ] org.eclipse.jetty.server.Server; jetty-9.3.8.v20160314
+INFO  - 2017-01-15 14:31:32.591; [   ] org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor [file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/contexts/] at interval 0
+INFO  - 2017-01-15 14:31:32.899; [   ] org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+WARN  - 2017-01-15 14:31:32.908; [   ] org.eclipse.jetty.security.ConstraintSecurityHandler; ServletContext@o.e.j.w.WebAppContext@271053e1{/solr,file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp/,STARTING}{/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp} has uncovered http methods for path: /
+INFO  - 2017-01-15 14:31:32.921; [   ] org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init(): WebAppClassLoader=1164371389@4566e5bd
+INFO  - 2017-01-15 14:31:32.941; [   ] org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2017-01-15 14:31:32.942; [   ] org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: /Users/mmarzougui/Documents/tools/solr-6.2.1/example/flash/solr/
+INFO  - 2017-01-15 14:31:32.943; [   ] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/mmarzougui/Documents/tools/solr-6.2.1/example/flash/solr'
+INFO  - 2017-01-15 14:31:32.943; [   ] org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2017-01-15 14:31:32.943; [   ] org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: /Users/mmarzougui/Documents/tools/solr-6.2.1/example/flash/solr/
+INFO  - 2017-01-15 14:31:32.959; [   ] org.apache.solr.common.cloud.SolrZkClient; Using default ZkCredentialsProvider
+INFO  - 2017-01-15 14:31:33.140; [   ] org.apache.solr.common.cloud.ConnectionManager; Waiting for client to connect to ZooKeeper
+INFO  - 2017-01-15 14:31:33.284; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@658e1d75 name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+INFO  - 2017-01-15 14:31:33.285; [   ] org.apache.solr.common.cloud.ConnectionManager; Client is connected to ZooKeeper
+INFO  - 2017-01-15 14:31:33.285; [   ] org.apache.solr.common.cloud.SolrZkClient; Using default ZkACLProvider
+INFO  - 2017-01-15 14:31:33.338; [   ] org.apache.solr.servlet.SolrDispatchFilter; Loading solr.xml from SolrHome (not found in ZooKeeper)
+INFO  - 2017-01-15 14:31:33.341; [   ] org.apache.solr.core.SolrXmlConfig; Loading container configuration from /Users/mmarzougui/Documents/tools/solr-6.2.1/example/flash/solr/solr.xml
+INFO  - 2017-01-15 14:31:33.412; [   ] org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: /Users/mmarzougui/Documents/tools/solr-6.2.1/example/flash/solr
+INFO  - 2017-01-15 14:31:33.447; [   ] org.apache.solr.core.CoreContainer; New CoreContainer 1077199500
+INFO  - 2017-01-15 14:31:33.447; [   ] org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=/Users/mmarzougui/Documents/tools/solr-6.2.1/example/flash/solr]
+WARN  - 2017-01-15 14:31:33.448; [   ] org.apache.solr.core.CoreContainer; Couldn't add files from /Users/mmarzougui/Documents/tools/solr-6.2.1/example/flash/solr/lib to classpath: /Users/mmarzougui/Documents/tools/solr-6.2.1/example/flash/solr/lib
+INFO  - 2017-01-15 14:31:33.464; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,connectionsEvictorSleepDelay : 5000,maxConnectionIdleTime : 40000,
+INFO  - 2017-01-15 14:31:33.611; [   ] org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+INFO  - 2017-01-15 14:31:33.615; [   ] org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2017-01-15 14:31:33.616; [   ] org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2017-01-15 14:31:33.617; [   ] org.apache.solr.core.ZkContainer; Zookeeper client=localhost:2181,localhost:2182,localhost:2183
+INFO  - 2017-01-15 14:31:33.632; [   ] org.apache.solr.cloud.ZkController; Added new OnReconnect listener org.apache.solr.cloud.ZkController$$Lambda$4/959869407@6eda5c9
+INFO  - 2017-01-15 14:31:33.634; [   ] org.apache.solr.common.cloud.ConnectionManager; Waiting for client to connect to ZooKeeper
+INFO  - 2017-01-15 14:31:33.661; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@16305fa4 name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+INFO  - 2017-01-15 14:31:33.662; [   ] org.apache.solr.common.cloud.ConnectionManager; Client is connected to ZooKeeper
+INFO  - 2017-01-15 14:31:33.720; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer/queue
+INFO  - 2017-01-15 14:31:33.786; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer/collection-queue-work
+INFO  - 2017-01-15 14:31:33.899; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer/collection-map-running
+INFO  - 2017-01-15 14:31:33.966; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer/collection-map-completed
+INFO  - 2017-01-15 14:31:34.017; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer/collection-map-failure
+INFO  - 2017-01-15 14:31:34.056; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes
+INFO  - 2017-01-15 14:31:34.083; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /collections
+INFO  - 2017-01-15 14:31:34.113; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /aliases.json
+INFO  - 2017-01-15 14:31:34.144; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /clusterstate.json
+INFO  - 2017-01-15 14:31:34.172; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /security.json
+INFO  - 2017-01-15 14:31:34.204; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating cluster state from ZooKeeper... 
+INFO  - 2017-01-15 14:31:34.211; [   ] org.apache.solr.common.cloud.ZkStateReader; Loaded empty cluster properties
+INFO  - 2017-01-15 14:31:34.222; [   ] org.apache.solr.common.cloud.ZkStateReader; Updated live nodes from ZooKeeper... (0) -> (0)
+INFO  - 2017-01-15 14:31:34.284; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer_elect
+INFO  - 2017-01-15 14:31:34.315; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer_elect/election
+INFO  - 2017-01-15 14:31:34.347; [   ] org.apache.solr.cloud.Overseer; Overseer (id=null) closing
+INFO  - 2017-01-15 14:31:34.387; [   ] org.apache.solr.cloud.LeaderElector; Joined leadership election with path: /overseer_elect/election/97287450759462913-192.168.1.27:8983_solr-n_0000000000
+INFO  - 2017-01-15 14:31:34.390; [   ] org.apache.solr.cloud.OverseerElectionContext; I am going to be the leader 192.168.1.27:8983_solr
+INFO  - 2017-01-15 14:31:34.392; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer_elect/leader
+INFO  - 2017-01-15 14:31:34.423; [   ] org.apache.solr.cloud.Overseer; Overseer (id=97287450759462913-192.168.1.27:8983_solr-n_0000000000) starting
+INFO  - 2017-01-15 14:31:34.506; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer/queue-work
+INFO  - 2017-01-15 14:31:34.787; [   ] org.apache.solr.cloud.OverseerAutoReplicaFailoverThread; Starting OverseerAutoReplicaFailoverThread autoReplicaFailoverWorkLoopDelay=10000 autoReplicaFailoverWaitAfterExpiration=30000 autoReplicaFailoverBadNodeExpiration=60000
+INFO  - 2017-01-15 14:31:34.821; [   ] org.apache.solr.cloud.OverseerTaskProcessor; Process current queue of overseer operations
+INFO  - 2017-01-15 14:31:34.829; [   ] org.apache.solr.cloud.ZkController; Register node as live in ZooKeeper:/live_nodes/192.168.1.27:8983_solr
+INFO  - 2017-01-15 14:31:34.830; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes/192.168.1.27:8983_solr
+INFO  - 2017-01-15 14:31:34.838; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; Starting to work on the main queue
+INFO  - 2017-01-15 14:31:34.872; [   ] org.apache.solr.common.cloud.ZkStateReader$LiveNodeWatcher; A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [0])
+INFO  - 2017-01-15 14:31:34.875; [   ] org.apache.solr.common.cloud.ZkStateReader; Updated live nodes from ZooKeeper... (0) -> (1)
+INFO  - 2017-01-15 14:31:34.879; [   ] org.apache.solr.common.cloud.ZkStateReader; Updated live nodes from ZooKeeper... (1) -> (1)
+INFO  - 2017-01-15 14:31:34.939; [   ] org.apache.solr.core.CoreContainer; Security conf doesn't exist. Skipping setup for authorization module.
+INFO  - 2017-01-15 14:31:34.939; [   ] org.apache.solr.core.CoreContainer; No authentication plugin used.
+INFO  - 2017-01-15 14:31:34.987; [   ] org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath /Users/mmarzougui/Documents/tools/solr-6.2.1/example/flash/solr
+INFO  - 2017-01-15 14:31:34.993; [   ] org.apache.solr.core.CoreDescriptor; Created CoreDescriptor: {name=flash, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+INFO  - 2017-01-15 14:31:34.995; [   ] org.apache.solr.core.CorePropertiesLocator$1; Found core flash in /Users/mmarzougui/Documents/tools/solr-6.2.1/example/flash/solr/flash
+INFO  - 2017-01-15 14:31:34.995; [   ] org.apache.solr.core.CorePropertiesLocator; Found 1 core definitions
+INFO  - 2017-01-15 14:31:35.019; [c:flash   x:flash] org.apache.solr.cloud.ZkController; publishing state=down
+INFO  - 2017-01-15 14:31:35.019; [c:flash   x:flash] org.apache.solr.cloud.ZkController; numShards not found on descriptor - reading it from system property
+INFO  - 2017-01-15 14:31:35.046; [c:flash   x:flash] org.apache.solr.cloud.ZkController; Collection flash not visible yet, but flagging it so a watch is registered when it becomes visible
+INFO  - 2017-01-15 14:31:35.051; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"flash",
+  "roles":null,
+  "base_url":"http://192.168.1.27:8983/solr",
+  "node_name":"192.168.1.27:8983_solr",
+  "state":"down",
+  "shard":null,
+  "collection":"flash",
+  "operation":"state"} current state version: 0
+INFO  - 2017-01-15 14:31:35.052; [c:flash   x:flash] org.apache.solr.common.cloud.ZkStateReader; Deleting data for [flash]
+INFO  - 2017-01-15 14:31:35.054; [   ] org.apache.solr.servlet.SolrDispatchFilter; user.dir=/Users/mmarzougui/Documents/tools/solr-6.2.1/server
+INFO  - 2017-01-15 14:31:35.055; [c:flash   x:flash] org.apache.solr.cloud.ZkController; look for our core node name
+INFO  - 2017-01-15 14:31:35.059; [   ] org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2017-01-15 14:31:35.065; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=null message={
+  "core":"flash",
+  "roles":null,
+  "base_url":"http://192.168.1.27:8983/solr",
+  "node_name":"192.168.1.27:8983_solr",
+  "state":"down",
+  "shard":null,
+  "collection":"flash",
+  "operation":"state"}
+INFO  - 2017-01-15 14:31:35.067; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Assigning new node to shard shard=shard1
+INFO  - 2017-01-15 14:31:35.082; [   ] org.eclipse.jetty.server.handler.ContextHandler; Started o.e.j.w.WebAppContext@271053e1{/solr,file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp}
+INFO  - 2017-01-15 14:31:35.095; [   ] org.eclipse.jetty.server.AbstractConnector; Started ServerConnector@b62d79{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+INFO  - 2017-01-15 14:31:35.098; [   ] org.eclipse.jetty.server.Server; Started @3088ms
+INFO  - 2017-01-15 14:31:35.128; [   ] org.apache.solr.common.cloud.ZkStateReader$LegacyClusterStateWatcher; A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json], has occurred - updating... (live nodes size: [1])
+INFO  - 2017-01-15 14:31:36.061; [c:flash   x:flash] org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for flash
+INFO  - 2017-01-15 14:31:36.062; [c:flash   x:flash] org.apache.solr.cloud.ZkController; Check for collection zkNode:flash
+INFO  - 2017-01-15 14:31:36.064; [c:flash   x:flash] org.apache.solr.cloud.ZkController; Creating collection in ZooKeeper:flash
+INFO  - 2017-01-15 14:31:36.065; [c:flash   x:flash] org.apache.solr.cloud.ZkController; Looking for collection configName
+INFO  - 2017-01-15 14:31:36.068; [c:flash   x:flash] org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 1
+INFO  - 2017-01-15 14:31:39.073; [c:flash   x:flash] org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 2
+INFO  - 2017-01-15 14:31:42.082; [c:flash   x:flash] org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 3
+INFO  - 2017-01-15 14:31:45.089; [c:flash   x:flash] org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 4
+INFO  - 2017-01-15 14:31:48.099; [c:flash   x:flash] org.apache.solr.cloud.ZkController; Could not find collection configName - pausing for 3 seconds and trying again - try: 5
+INFO  - 2017-01-15 14:31:48.553; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484490708266} status=0 QTime=80
+INFO  - 2017-01-15 14:31:48.598; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1484490708267} status=0 QTime=125
+INFO  - 2017-01-15 14:31:48.697; [   ] org.apache.solr.handler.admin.CollectionsHandler; Invoked Collection Action :list with params action=LIST&wt=json&_=1484490708267 and sendToOCPQueue=true
+INFO  - 2017-01-15 14:31:48.698; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1484490708267} status=0 QTime=20
+INFO  - 2017-01-15 14:31:48.704; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1484490708267} status=0 QTime=29
+ERROR - 2017-01-15 14:31:51.102; [c:flash   x:flash] org.apache.solr.cloud.ZkController; Could not find configName for collection flash
+ERROR - 2017-01-15 14:31:51.104; [c:flash   x:flash] org.apache.solr.core.CoreContainer; Error creating core [flash]: Could not find configName for collection flash found:null
+org.apache.solr.common.cloud.ZooKeeperException: Could not find configName for collection flash found:null
+	at org.apache.solr.cloud.ZkController.getConfName(ZkController.java:1396)
+	at org.apache.solr.cloud.ZkController.createCollectionZkNode(ZkController.java:1323)
+	at org.apache.solr.cloud.CloudConfigSetService.createCoreResourceLoader(CloudConfigSetService.java:35)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:74)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:836)
+	at org.apache.solr.core.CoreContainer.lambda$load$0(CoreContainer.java:494)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+ERROR - 2017-01-15 14:31:51.106; [   ] org.apache.solr.core.CoreContainer; Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [flash]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.solr.core.CoreContainer.lambda$load$1(CoreContainer.java:522)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [flash]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:851)
+	at org.apache.solr.core.CoreContainer.lambda$load$0(CoreContainer.java:494)
+	... 5 more
+Caused by: org.apache.solr.common.cloud.ZooKeeperException: Could not find configName for collection flash found:null
+	at org.apache.solr.cloud.ZkController.getConfName(ZkController.java:1396)
+	at org.apache.solr.cloud.ZkController.createCollectionZkNode(ZkController.java:1323)
+	at org.apache.solr.cloud.CloudConfigSetService.createCoreResourceLoader(CloudConfigSetService.java:35)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:74)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:836)
+	... 6 more
+INFO  - 2017-01-15 14:31:53.362; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484490708266} status=0 QTime=0
+INFO  - 2017-01-15 14:31:53.368; [   ] org.apache.solr.handler.admin.CollectionsHandler; Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json&_=1484490708267 and sendToOCPQueue=true
+INFO  - 2017-01-15 14:31:53.382; [   ] org.apache.solr.common.cloud.ZkStateReader; Load collection config from: [/collections/flash]
+ERROR - 2017-01-15 14:31:53.385; [   ] org.apache.solr.common.SolrException; org.apache.solr.common.SolrException: Error loading config name for collection flash
+	at org.apache.solr.common.cloud.ZkStateReader.readConfigName(ZkStateReader.java:196)
+	at org.apache.solr.handler.admin.ClusterStatus.getClusterStatus(ClusterStatus.java:141)
+	at org.apache.solr.handler.admin.CollectionsHandler$CollectionOperation.lambda$static$19(CollectionsHandler.java:628)
+	at org.apache.solr.handler.admin.CollectionsHandler$CollectionOperation.execute(CollectionsHandler.java:812)
+	at org.apache.solr.handler.admin.CollectionsHandler.handleRequestBody(CollectionsHandler.java:206)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /collections/flash
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:111)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:348)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:345)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:60)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:345)
+	at org.apache.solr.common.cloud.ZkStateReader.readConfigName(ZkStateReader.java:178)
+	... 33 more
+
+INFO  - 2017-01-15 14:31:53.386; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1484490708267} status=500 QTime=17
+ERROR - 2017-01-15 14:31:53.388; [   ] org.apache.solr.common.SolrException; null:org.apache.solr.common.SolrException: Error loading config name for collection flash
+	at org.apache.solr.common.cloud.ZkStateReader.readConfigName(ZkStateReader.java:196)
+	at org.apache.solr.handler.admin.ClusterStatus.getClusterStatus(ClusterStatus.java:141)
+	at org.apache.solr.handler.admin.CollectionsHandler$CollectionOperation.lambda$static$19(CollectionsHandler.java:628)
+	at org.apache.solr.handler.admin.CollectionsHandler$CollectionOperation.execute(CollectionsHandler.java:812)
+	at org.apache.solr.handler.admin.CollectionsHandler.handleRequestBody(CollectionsHandler.java:206)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /collections/flash
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:111)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:348)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:345)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:60)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:345)
+	at org.apache.solr.common.cloud.ZkStateReader.readConfigName(ZkStateReader.java:178)
+	... 33 more
+
+INFO  - 2017-01-15 14:31:53.406; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1484490708267} status=0 QTime=37
+INFO  - 2017-01-15 14:31:53.417; [   ] org.apache.solr.handler.admin.CollectionsHandler; Invoked Collection Action :list with params action=LIST&wt=json&_=1484490708267 and sendToOCPQueue=true
+INFO  - 2017-01-15 14:31:53.418; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1484490708267} status=0 QTime=0
+INFO  - 2017-01-15 14:32:07.760; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1484490708266} status=0 QTime=0
+INFO  - 2017-01-15 14:32:07.766; [   ] org.apache.solr.cloud.ZkController; Added new OnReconnect listener org.apache.solr.handler.admin.ZookeeperInfoHandler$PagedCollectionSupport@4127ba8b
+INFO  - 2017-01-15 14:32:07.781; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/zookeeper params={path=/live_nodes&wt=json&_=1484490727742} status=0 QTime=17
+INFO  - 2017-01-15 14:32:07.797; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1484490708267} status=0 QTime=36
+INFO  - 2017-01-15 14:32:07.802; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/zookeeper params={path=/clusterstate.json&view=graph&detail=true&wt=json&_=1484490727742} status=0 QTime=13
+INFO  - 2017-01-15 14:32:07.806; [   ] org.apache.solr.handler.admin.CollectionsHandler; Invoked Collection Action :list with params action=LIST&wt=json&_=1484490708267 and sendToOCPQueue=true
+INFO  - 2017-01-15 14:32:07.807; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1484490708267} status=0 QTime=0

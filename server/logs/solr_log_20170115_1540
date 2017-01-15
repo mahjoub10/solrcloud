@@ -1,0 +1,129 @@
+2017-01-15 14:40:45.191 INFO  (main) [   ] o.e.j.u.log Logging initialized @396ms
+2017-01-15 14:40:45.390 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2017-01-15 14:40:45.405 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/contexts/] at interval 0
+2017-01-15 14:40:45.649 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2017-01-15 14:40:45.658 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@6fc6f14e{/solr,file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp/,STARTING}{/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp} has uncovered http methods for path: /
+2017-01-15 14:40:45.666 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=120694604@731a74c
+2017-01-15 14:40:45.683 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2017-01-15 14:40:45.683 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr3
+2017-01-15 14:40:45.684 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr3'
+2017-01-15 14:40:45.684 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2017-01-15 14:40:45.685 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr3
+2017-01-15 14:40:45.697 INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkCredentialsProvider
+2017-01-15 14:40:45.731 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2017-01-15 14:40:45.842 INFO  (zkCallback-1-thread-1) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@501e39de name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2017-01-15 14:40:45.842 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2017-01-15 14:40:45.843 INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkACLProvider
+2017-01-15 14:40:45.872 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2017-01-15 14:40:45.875 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr3/solr.xml
+2017-01-15 14:40:45.955 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr3
+2017-01-15 14:40:45.982 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 688726285
+2017-01-15 14:40:45.982 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr3]
+2017-01-15 14:40:45.982 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr3/lib to classpath: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr3/lib
+2017-01-15 14:40:45.997 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,connectionsEvictorSleepDelay : 5000,maxConnectionIdleTime : 40000,
+2017-01-15 14:40:46.143 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-01-15 14:40:46.145 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2017-01-15 14:40:46.146 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2017-01-15 14:40:46.148 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:2181,localhost:2182,localhost:2183
+2017-01-15 14:40:46.160 INFO  (main) [   ] o.a.s.c.ZkController Added new OnReconnect listener org.apache.solr.cloud.ZkController$$Lambda$4/306612792@59309333
+2017-01-15 14:40:46.162 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2017-01-15 14:40:46.205 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@1061f323 name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+2017-01-15 14:40:46.205 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2017-01-15 14:40:46.410 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updating cluster state from ZooKeeper... 
+2017-01-15 14:40:46.416 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Loaded empty cluster properties
+2017-01-15 14:40:46.420 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (2)
+2017-01-15 14:40:46.606 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=null) closing
+2017-01-15 14:40:46.633 INFO  (main) [   ] o.a.s.c.LeaderElector Joined leadership election with path: /overseer_elect/election/97287450759462917-192.168.1.27:8985_solr-n_0000000004
+2017-01-15 14:40:46.638 INFO  (main) [   ] o.a.s.c.LeaderElector Watching path /overseer_elect/election/97287450759462915-192.168.1.27:8984_solr-n_0000000003 to know if I could be the leader
+2017-01-15 14:40:46.640 INFO  (main) [   ] o.a.s.c.ZkController Publish node=192.168.1.27:8985_solr as DOWN
+2017-01-15 14:40:46.703 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.1.27:8985_solr
+2017-01-15 14:40:46.704 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /live_nodes/192.168.1.27:8985_solr
+2017-01-15 14:40:46.765 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [2])
+2017-01-15 14:40:46.768 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (3)
+2017-01-15 14:40:46.790 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json], has occurred - updating... (live nodes size: [3])
+2017-01-15 14:40:46.850 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2017-01-15 14:40:46.850 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2017-01-15 14:40:46.906 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr3
+2017-01-15 14:40:46.914 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=madaniyah_shard1_replica2, collection.configName=madaniyah, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, collection=madaniyah, coreNodeName=core_node2, numShards=2, dataDir=data/, shard=shard1}
+2017-01-15 14:40:46.914 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core madaniyah_shard1_replica2 in /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr3/madaniyah_shard1_replica2
+2017-01-15 14:40:46.914 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions
+2017-01-15 14:40:46.929 INFO  (coreLoadExecutor-6-thread-1-processing-n:192.168.1.27:8985_solr) [c:madaniyah s:shard1 r:core_node2 x:madaniyah_shard1_replica2] o.a.s.c.ZkController publishing state=down
+2017-01-15 14:40:46.931 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Users/mmarzougui/Documents/tools/solr-6.2.1/server
+2017-01-15 14:40:46.932 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2017-01-15 14:40:46.947 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6fc6f14e{/solr,file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp}
+2017-01-15 14:40:46.955 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@7265589d{HTTP/1.1,[http/1.1]}{0.0.0.0:8985}
+2017-01-15 14:40:46.955 INFO  (main) [   ] o.e.j.s.Server Started @2165ms
+2017-01-15 14:40:46.976 INFO  (coreLoadExecutor-6-thread-1-processing-n:192.168.1.27:8985_solr) [c:madaniyah s:shard1 r:core_node2 x:madaniyah_shard1_replica2] o.a.s.c.ZkController Registering watch for collection madaniyah
+2017-01-15 14:40:46.983 INFO  (coreLoadExecutor-6-thread-1-processing-n:192.168.1.27:8985_solr) [c:madaniyah s:shard1 r:core_node2 x:madaniyah_shard1_replica2] o.a.s.c.c.ZkStateReader Deleting data for [madaniyah]
+2017-01-15 14:40:46.984 INFO  (coreLoadExecutor-6-thread-1-processing-n:192.168.1.27:8985_solr) [c:madaniyah s:shard1 r:core_node2 x:madaniyah_shard1_replica2] o.a.s.c.ZkController waiting to find shard id in clusterstate for madaniyah_shard1_replica2
+2017-01-15 14:40:47.163 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json], has occurred - updating... (live nodes size: [3])
+2017-01-15 14:40:47.991 INFO  (coreLoadExecutor-6-thread-1-processing-n:192.168.1.27:8985_solr) [c:madaniyah s:shard1 r:core_node2 x:madaniyah_shard1_replica2] o.a.s.c.ZkController Check for collection zkNode:madaniyah
+2017-01-15 14:40:47.994 INFO  (coreLoadExecutor-6-thread-1-processing-n:192.168.1.27:8985_solr) [c:madaniyah s:shard1 r:core_node2 x:madaniyah_shard1_replica2] o.a.s.c.ZkController Collection zkNode exists
+2017-01-15 14:40:47.994 INFO  (coreLoadExecutor-6-thread-1-processing-n:192.168.1.27:8985_solr) [c:madaniyah s:shard1 r:core_node2 x:madaniyah_shard1_replica2] o.a.s.c.c.ZkStateReader Load collection config from: [/collections/madaniyah]
+2017-01-15 14:40:47.998 ERROR (coreLoadExecutor-6-thread-1-processing-n:192.168.1.27:8985_solr) [c:madaniyah s:shard1 r:core_node2 x:madaniyah_shard1_replica2] o.a.s.c.c.ZkStateReader Specified config does not exist in ZooKeeper: [madaniyah]
+2017-01-15 14:40:47.999 ERROR (coreLoadExecutor-6-thread-1-processing-n:192.168.1.27:8985_solr) [c:madaniyah s:shard1 r:core_node2 x:madaniyah_shard1_replica2] o.a.s.c.CoreContainer Error creating core [madaniyah_shard1_replica2]: Specified config does not exist in ZooKeeper: madaniyah
+org.apache.solr.common.cloud.ZooKeeperException: Specified config does not exist in ZooKeeper: madaniyah
+	at org.apache.solr.common.cloud.ZkStateReader.readConfigName(ZkStateReader.java:188)
+	at org.apache.solr.cloud.CloudConfigSetService.createCoreResourceLoader(CloudConfigSetService.java:36)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:74)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:836)
+	at org.apache.solr.core.CoreContainer.lambda$load$0(CoreContainer.java:494)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-01-15 14:40:48.002 ERROR (coreContainerWorkExecutor-2-thread-1-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [madaniyah_shard1_replica2]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.solr.core.CoreContainer.lambda$load$1(CoreContainer.java:522)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [madaniyah_shard1_replica2]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:851)
+	at org.apache.solr.core.CoreContainer.lambda$load$0(CoreContainer.java:494)
+	... 5 more
+Caused by: org.apache.solr.common.cloud.ZooKeeperException: Specified config does not exist in ZooKeeper: madaniyah
+	at org.apache.solr.common.cloud.ZkStateReader.readConfigName(ZkStateReader.java:188)
+	at org.apache.solr.cloud.CloudConfigSetService.createCoreResourceLoader(CloudConfigSetService.java:36)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:74)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:836)
+	... 6 more
+2017-01-15 14:40:52.604 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+2017-01-15 14:40:52.609 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (4)
+2017-01-15 14:40:52.669 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json], has occurred - updating... (live nodes size: [4])
+2017-01-15 14:40:52.991 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json], has occurred - updating... (live nodes size: [4])
+2017-01-15 14:42:34.920 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [4])
+2017-01-15 14:42:34.927 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (3)
+2017-01-15 14:42:35.338 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json], has occurred - updating... (live nodes size: [3])
+2017-01-15 14:42:35.573 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json], has occurred - updating... (live nodes size: [3])
+2017-01-15 14:42:40.549 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+2017-01-15 14:42:40.556 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 192.168.1.27:8985_solr
+2017-01-15 14:42:40.557 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer_elect/leader
+2017-01-15 14:42:40.557 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (2)
+2017-01-15 14:42:40.591 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.Overseer Overseer (id=97287450759462917-192.168.1.27:8985_solr-n_0000000004) starting
+2017-01-15 14:42:40.886 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.OverseerAutoReplicaFailoverThread Starting OverseerAutoReplicaFailoverThread autoReplicaFailoverWorkLoopDelay=10000 autoReplicaFailoverWaitAfterExpiration=30000 autoReplicaFailoverBadNodeExpiration=60000
+2017-01-15 14:42:40.905 INFO  (OverseerCollectionConfigSetProcessor-97287450759462917-192.168.1.27:8985_solr-n_0000000004) [   ] o.a.s.c.OverseerTaskProcessor Process current queue of overseer operations
+2017-01-15 14:42:40.907 INFO  (OverseerStateUpdate-97287450759462917-192.168.1.27:8985_solr-n_0000000004) [   ] o.a.s.c.Overseer Starting to work on the main queue
+2017-01-15 14:42:40.911 INFO  (OverseerStateUpdate-97287450759462917-192.168.1.27:8985_solr-n_0000000004) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (2)
+2017-01-15 14:42:40.919 INFO  (OverseerStateUpdate-97287450759462917-192.168.1.27:8985_solr-n_0000000004) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"downnode",
+  "node_name":"192.168.1.27:8984_solr"} current state version: 11
+2017-01-15 14:42:40.925 INFO  (OverseerStateUpdate-97287450759462917-192.168.1.27:8985_solr-n_0000000004) [   ] o.a.s.c.o.NodeMutator DownNode state invoked for node: 192.168.1.27:8984_solr
+2017-01-15 14:42:40.925 INFO  (OverseerStateUpdate-97287450759462917-192.168.1.27:8985_solr-n_0000000004) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node1:{"core":"madaniyah_shard1_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+2017-01-15 14:42:40.973 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json], has occurred - updating... (live nodes size: [2])
+2017-01-15 14:42:41.232 INFO  (zkCallback-4-thread-2-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/clusterstate.json], has occurred - updating... (live nodes size: [2])
+2017-01-15 14:42:46.099 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@7265589d{HTTP/1.1,[http/1.1]}{0.0.0.0:8985}
+2017-01-15 14:42:46.100 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=688726285
+2017-01-15 14:42:46.100 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.1.27:8985_solr as DOWN
+2017-01-15 14:42:46.158 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=97287450759462917-192.168.1.27:8985_solr-n_0000000004) closing
+2017-01-15 14:42:46.160 INFO  (OverseerStateUpdate-97287450759462917-192.168.1.27:8985_solr-n_0000000004) [   ] o.a.s.c.Overseer Overseer Loop exiting : 192.168.1.27:8985_solr
+2017-01-15 14:42:46.177 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [2])
+2017-01-15 14:42:46.178 WARN  (zkCallback-4-thread-3-processing-n:192.168.1.27:8985_solr) [   ] o.a.s.c.c.ZkStateReader ZooKeeper watch triggered, but Solr cannot talk to ZK: [KeeperErrorCode = Session expired for /live_nodes]
+2017-01-15 14:42:46.184 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@6fc6f14e{/solr,null,UNAVAILABLE}{/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp}
+2017-01-15 14:42:46.185 WARN  (ShutdownMonitor) [   ] o.e.j.s.ServletContextHandler ServletContextHandler.setHandler should not be called directly. Use insertHandler or setSessionHandler etc.

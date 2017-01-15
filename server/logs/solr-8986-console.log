@@ -1,0 +1,1155 @@
+0    INFO  (main) [   ] o.e.j.u.log Logging initialized @341ms
+181  INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+201  INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/contexts/] at interval 0
+500  INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+509  WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@6fc6f14e{/solr,file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp/,STARTING}{/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp} has uncovered http methods for path: /
+519  INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=120694604@731a74c
+533  INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+533  INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr4
+533  INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr4'
+534  INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+534  INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr4
+545  INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkCredentialsProvider
+573  INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+689  INFO  (zkCallback-1-thread-1) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@1d399089 name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+689  INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+690  INFO  (main) [   ] o.a.s.c.c.SolrZkClient Using default ZkACLProvider
+717  INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+721  INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr4/solr.xml
+790  INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr4
+817  INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 688726285
+819  INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr4]
+819  WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr4/lib to classpath: /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr4/lib
+832  INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,connectionsEvictorSleepDelay : 5000,maxConnectionIdleTime : 40000,
+1049 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+1053 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+1054 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+1055 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:2181,localhost:2182,localhost:2183
+1073 INFO  (main) [   ] o.a.s.c.ZkController Added new OnReconnect listener org.apache.solr.cloud.ZkController$$Lambda$4/306612792@59309333
+1075 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+1105 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@f5c05e3 name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+1106 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+1314 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updating cluster state from ZooKeeper... 
+1320 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Loaded empty cluster properties
+1326 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (3)
+1362 INFO  (main) [   ] o.a.s.c.Overseer Overseer (id=null) closing
+1388 INFO  (main) [   ] o.a.s.c.LeaderElector Joined leadership election with path: /overseer_elect/election/241402837565112333-192.168.1.27:8986_solr-n_0000000050
+1396 INFO  (main) [   ] o.a.s.c.LeaderElector Watching path /overseer_elect/election/97287649486372891-192.168.1.27:8985_solr-n_0000000049 to know if I could be the leader
+1398 INFO  (main) [   ] o.a.s.c.ZkController Publish node=192.168.1.27:8986_solr as DOWN
+1479 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.1.27:8986_solr
+1479 INFO  (main) [   ] o.a.s.c.c.SolrZkClient makePath: /live_nodes/192.168.1.27:8986_solr
+1534 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+1553 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (4)
+1662 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+1662 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+1736 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr4
+1737 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions
+1766 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Users/mmarzougui/Documents/tools/solr-6.2.1/server
+1767 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+1781 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6fc6f14e{/solr,file:///Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp/,AVAILABLE}{/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp}
+1789 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@492138a{HTTP/1.1,[http/1.1]}{0.0.0.0:8986}
+1789 INFO  (main) [   ] o.e.j.s.Server Started @2132ms
+51239 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [4])
+51347 WARN  (zkCallback-4-thread-5-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@f5c05e3 name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:Disconnected type:None path:null path:null type:None
+51347 WARN  (zkCallback-4-thread-5-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ConnectionManager zkClient has disconnected
+51466 WARN  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@f5c05e3 name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:Expired type:None path:null path:null type:None
+51466 WARN  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ConnectionManager Our previous ZooKeeper session was expired. Attempting to reconnect to recover relationship with ZooKeeper...
+51466 WARN  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.DefaultConnectionStrategy Connection expired - starting a new one...
+51467 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+51494 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr-EventThread) [   ] o.a.s.c.c.ConnectionManager Watcher org.apache.solr.common.cloud.ConnectionManager@f5c05e3 name:ZooKeeperConnection Watcher:localhost:2181,localhost:2182,localhost:2183 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+51495 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+51495 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ConnectionManager Connection with ZooKeeper reestablished.
+51495 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.ZkController ZooKeeper session re-connected ... refreshing core states after session expiration.
+51495 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updating cluster state from ZooKeeper... 
+51497 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Loaded empty cluster properties
+52853 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (0)
+52866 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.ElectionContext Canceling election /overseer_elect/election/241402837565112333-192.168.1.27:8986_solr-n_0000000050
+52889 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.ElectionContext cancelElection did not find election node to remove /overseer_elect/election/241402837565112333-192.168.1.27:8986_solr-n_0000000050
+52914 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.LeaderElector Joined leadership election with path: /overseer_elect/election/241402837565112334-192.168.1.27:8986_solr-n_0000000051
+52944 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 192.168.1.27:8986_solr
+52944 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.SolrZkClient makePath: /overseer_elect/leader
+53081 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.Overseer Overseer (id=241402837565112334-192.168.1.27:8986_solr-n_0000000051) starting
+53255 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [0])
+53256 INFO  (zkCallback-4-thread-6-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [0])
+53274 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+53302 INFO  (zkCallback-4-thread-6-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+53303 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [2])
+53337 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (2)
+53357 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [2])
+53357 INFO  (zkCallback-4-thread-6-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [2])
+53375 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (3)
+53378 INFO  (zkCallback-4-thread-6-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (3)
+53535 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerAutoReplicaFailoverThread Starting OverseerAutoReplicaFailoverThread autoReplicaFailoverWorkLoopDelay=10000 autoReplicaFailoverWaitAfterExpiration=30000 autoReplicaFailoverBadNodeExpiration=60000
+53556 INFO  (OverseerCollectionConfigSetProcessor-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.OverseerTaskProcessor Process current queue of overseer operations
+53556 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.ZkController Publish node=192.168.1.27:8986_solr as DOWN
+53559 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer Starting to work on the main queue
+53617 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (3)
+53617 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.1.27:8986_solr
+53620 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.SolrZkClient makePath: /live_nodes/192.168.1.27:8986_solr
+53628 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 4, message = {
+  "operation":"downnode",
+  "node_name":"192.168.1.27:8983_solr"} current state version: 40
+53636 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator DownNode state invoked for node: 192.168.1.27:8983_solr
+53659 INFO  (zkCallback-4-thread-6-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+53659 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+53665 INFO  (zkCallback-4-thread-6-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (4)
+53666 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.DefaultConnectionStrategy Reconnected to ZooKeeper
+53672 INFO  (zkCallback-4-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (4)
+53673 INFO  (zkCallback-4-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ConnectionManager Connected:true
+53678 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node3:{"core":"flash22_shard4_replica1","base_url":"http://192.168.1.27:8983/solr","node_name":"192.168.1.27:8983_solr","state":"down","leader":"true"} to down
+53678 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node1:{"core":"flash33_shard4_replica1","base_url":"http://192.168.1.27:8983/solr","node_name":"192.168.1.27:8983_solr","state":"down","leader":"true"} to down
+53678 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node6:{"core":"flash44_shard2_replica1","base_url":"http://192.168.1.27:8983/solr","node_name":"192.168.1.27:8983_solr","state":"down"} to down
+53678 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node3:{"core":"flash44_shard4_replica1","base_url":"http://192.168.1.27:8983/solr","node_name":"192.168.1.27:8983_solr","state":"down"} to down
+53680 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node3:{"core":"flash55_shard1_replica3","base_url":"http://192.168.1.27:8983/solr","node_name":"192.168.1.27:8983_solr","state":"down"} to down
+53680 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node4:{"core":"flash55_shard2_replica3","base_url":"http://192.168.1.27:8983/solr","node_name":"192.168.1.27:8983_solr","state":"down"} to down
+53680 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node2:{"core":"flash55_shard3_replica3","base_url":"http://192.168.1.27:8983/solr","node_name":"192.168.1.27:8983_solr","state":"down"} to down
+53680 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node1:{"core":"flash55_shard4_replica3","base_url":"http://192.168.1.27:8983/solr","node_name":"192.168.1.27:8983_solr","state":"down"} to down
+53712 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash22/state.json version: 21
+53782 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash33/state.json version: 14
+53860 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash44/state.json version: 21
+53948 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash55/state.json version: 19
+54058 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 3, message = {
+  "operation":"downnode",
+  "node_name":"192.168.1.27:8984_solr"} current state version: 40
+54058 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator DownNode state invoked for node: 192.168.1.27:8984_solr
+54058 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node4:{"core":"flash22_shard3_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down","leader":"true"} to down
+54058 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node3:{"core":"flash33_shard3_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down","leader":"true"} to down
+54059 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node8:{"core":"flash44_shard1_replica2","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54059 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node1:{"core":"flash44_shard3_replica2","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54059 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node16:{"core":"flash55_shard1_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54060 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node15:{"core":"flash55_shard2_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54060 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node14:{"core":"flash55_shard3_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54060 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node13:{"core":"flash55_shard4_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54062 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash/state.json version: 31
+54134 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash22/state.json version: 22
+54216 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash33/state.json version: 15
+54292 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash44/state.json version: 22
+54370 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash55/state.json version: 20
+54495 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 0, message = {
+  "operation":"downnode",
+  "node_name":"192.168.1.27:8985_solr"} current state version: 40
+54495 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator DownNode state invoked for node: 192.168.1.27:8985_solr
+54495 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node2:{"core":"flash22_shard2_replica1","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down","leader":"true"} to down
+54495 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node2:{"core":"flash33_shard1_replica1","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down","leader":"true"} to down
+54496 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node5:{"core":"flash44_shard2_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down","leader":"true"} to down
+54496 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node4:{"core":"flash44_shard4_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down","leader":"true"} to down
+54496 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node9:{"core":"flash55_shard1_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down"} to down
+54496 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node11:{"core":"flash55_shard2_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down"} to down
+54496 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node7:{"core":"flash55_shard3_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down"} to down
+54497 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node12:{"core":"flash55_shard4_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down"} to down
+54497 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node1:{"core":"flash_shard2_replica1","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down","leader":"true"} to down
+54498 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash/state.json version: 31
+54514 WARN  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer Bad version writing to ZK using compare-and-set, will force refresh cluster state
+org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /collections/flash/state.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:115)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1270)
+	at org.apache.solr.common.cloud.SolrZkClient$8.execute(SolrZkClient.java:365)
+	at org.apache.solr.common.cloud.SolrZkClient$8.execute(SolrZkClient.java:362)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:60)
+	at org.apache.solr.common.cloud.SolrZkClient.setData(SolrZkClient.java:362)
+	at org.apache.solr.cloud.overseer.ZkStateWriter.writePendingUpdates(ZkStateWriter.java:230)
+	at org.apache.solr.cloud.overseer.ZkStateWriter.enqueueUpdate(ZkStateWriter.java:118)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.processQueueItem(Overseer.java:289)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.run(Overseer.java:217)
+	at java.lang.Thread.run(Thread.java:745)
+54520 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (4)
+54522 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: workQueueSize: 1, message = {
+  "operation":"downnode",
+  "node_name":"192.168.1.27:8984_solr"}
+54522 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator DownNode state invoked for node: 192.168.1.27:8984_solr
+54528 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node4:{"core":"flash22_shard3_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down","leader":"true"} to down
+54528 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node3:{"core":"flash33_shard3_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down","leader":"true"} to down
+54528 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node8:{"core":"flash44_shard1_replica2","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54528 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node1:{"core":"flash44_shard3_replica2","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54529 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node16:{"core":"flash55_shard1_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54529 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node15:{"core":"flash55_shard2_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54529 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node14:{"core":"flash55_shard3_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54529 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node13:{"core":"flash55_shard4_replica1","base_url":"http://192.168.1.27:8984/solr","node_name":"192.168.1.27:8984_solr","state":"down"} to down
+54533 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash22/state.json version: 23
+54561 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash33/state.json version: 16
+54591 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash44/state.json version: 23
+54615 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash55/state.json version: 21
+54666 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash/state.json version: 32
+54721 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 2, message = {
+  "operation":"downnode",
+  "node_name":"192.168.1.27:8985_solr"} current state version: 40
+54721 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator DownNode state invoked for node: 192.168.1.27:8985_solr
+54721 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node2:{"core":"flash22_shard2_replica1","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down","leader":"true"} to down
+54721 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node2:{"core":"flash33_shard1_replica1","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down","leader":"true"} to down
+54721 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node5:{"core":"flash44_shard2_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down","leader":"true"} to down
+54722 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node4:{"core":"flash44_shard4_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down","leader":"true"} to down
+54722 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node9:{"core":"flash55_shard1_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down"} to down
+54722 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node11:{"core":"flash55_shard2_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down"} to down
+54722 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node7:{"core":"flash55_shard3_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down"} to down
+54723 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node12:{"core":"flash55_shard4_replica2","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down"} to down
+54723 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node1:{"core":"flash_shard2_replica1","base_url":"http://192.168.1.27:8985/solr","node_name":"192.168.1.27:8985_solr","state":"down","leader":"true"} to down
+54747 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash22/state.json version: 24
+54824 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash33/state.json version: 17
+54902 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash44/state.json version: 24
+54984 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash55/state.json version: 22
+55100 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 0, message = {
+  "operation":"downnode",
+  "node_name":"192.168.1.27:8986_solr"} current state version: 40
+55100 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator DownNode state invoked for node: 192.168.1.27:8986_solr
+55100 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node1:{"core":"flash22_shard1_replica1","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55100 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node4:{"core":"flash33_shard2_replica1","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55101 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node2:{"core":"flash44_shard1_replica1","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55101 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node7:{"core":"flash44_shard3_replica1","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55101 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node6:{"core":"flash55_shard1_replica4","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55101 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node5:{"core":"flash55_shard2_replica4","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55102 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node8:{"core":"flash55_shard3_replica4","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55102 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node10:{"core":"flash55_shard4_replica4","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55102 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node2:{"core":"flash_shard1_replica1","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55104 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash/state.json version: 33
+55169 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash22/state.json version: 25
+55241 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash33/state.json version: 18
+55342 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash44/state.json version: 25
+55435 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash55/state.json version: 23
+55653 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash/state.json version: 33
+55679 WARN  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer Bad version writing to ZK using compare-and-set, will force refresh cluster state
+org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /collections/flash/state.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:115)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:1270)
+	at org.apache.solr.common.cloud.SolrZkClient$8.execute(SolrZkClient.java:365)
+	at org.apache.solr.common.cloud.SolrZkClient$8.execute(SolrZkClient.java:362)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:60)
+	at org.apache.solr.common.cloud.SolrZkClient.setData(SolrZkClient.java:362)
+	at org.apache.solr.cloud.overseer.ZkStateWriter.writePendingUpdates(ZkStateWriter.java:230)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.run(Overseer.java:240)
+	at java.lang.Thread.run(Thread.java:745)
+55682 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (4)
+55685 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: workQueueSize: 1, message = {
+  "operation":"downnode",
+  "node_name":"192.168.1.27:8986_solr"}
+55685 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator DownNode state invoked for node: 192.168.1.27:8986_solr
+55691 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node1:{"core":"flash22_shard1_replica1","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55691 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node4:{"core":"flash33_shard2_replica1","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55692 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node2:{"core":"flash44_shard1_replica1","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55692 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node7:{"core":"flash44_shard3_replica1","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55693 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node6:{"core":"flash55_shard1_replica4","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55693 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node5:{"core":"flash55_shard2_replica4","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55693 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node8:{"core":"flash55_shard3_replica4","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55693 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node10:{"core":"flash55_shard4_replica4","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55693 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator Update replica state for core_node2:{"core":"flash_shard1_replica1","base_url":"http://192.168.1.27:8986/solr","node_name":"192.168.1.27:8986_solr","state":"down","leader":"true"} to down
+55696 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash22/state.json version: 26
+55722 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash33/state.json version: 19
+55751 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash44/state.json version: 26
+55804 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash55/state.json version: 24
+55832 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to update_collection /collections/flash/state.json version: 34
+127263 INFO  (OverseerCollectionConfigSetProcessor-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.OverseerTaskProcessor Overseer Collection Message Handler: Get the message id:/overseer/collection-queue-work/qn-0000000038 message:{
+  "name":"flash22",
+  "operation":"delete"}
+127265 INFO  (OverseerThreadFactory-8-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler OverseerCollectionMessageHandler.processMessage : delete , {
+  "name":"flash22",
+  "operation":"delete"}
+127267 INFO  (OverseerThreadFactory-8-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Executing Collection Cmd : action=UNLOAD&deleteInstanceDir=true&deleteDataDir=true
+127415 ERROR (OverseerThreadFactory-8-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8984/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash22_shard3_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+127418 ERROR (OverseerThreadFactory-8-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8983/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash22_shard4_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+127421 ERROR (OverseerThreadFactory-8-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8985/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash22_shard2_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+127480 ERROR (qtp12209492-15) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash22_shard1_replica1]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+127481 INFO  (qtp12209492-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash22_shard1_replica1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=33
+127495 ERROR (OverseerThreadFactory-8-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8986/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash22_shard1_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+127540 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"delete",
+  "name":"flash22"} current state version: 40
+127696 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to delete_collection /collections/flash22/state.json
+128008 INFO  (zkCallback-4-thread-75-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A collections change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections], has occurred - updating...
+128430 INFO  (OverseerThreadFactory-8-thread-1-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerTaskProcessor Overseer Collection Message Handler: Message id:/overseer/collection-queue-work/qn-0000000038 complete, response:{failure={192.168.1.27:8984_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash22_shard3_replica1],192.168.1.27:8983_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash22_shard4_replica1],192.168.1.27:8985_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash22_shard2_replica1],192.168.1.27:8986_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash22_shard1_replica1]}}
+129291 INFO  (OverseerCollectionConfigSetProcessor-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.OverseerTaskQueue Response ZK path: /overseer/collection-queue-work/qnr-0000000038 doesn't exist.  Requestor may have disconnected from ZooKeeper
+136563 INFO  (OverseerCollectionConfigSetProcessor-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.OverseerTaskProcessor Overseer Collection Message Handler: Get the message id:/overseer/collection-queue-work/qn-0000000040 message:{
+  "name":"flash33",
+  "operation":"delete"}
+136564 INFO  (OverseerThreadFactory-8-thread-2-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler OverseerCollectionMessageHandler.processMessage : delete , {
+  "name":"flash33",
+  "operation":"delete"}
+136566 INFO  (OverseerThreadFactory-8-thread-2-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Executing Collection Cmd : action=UNLOAD&deleteInstanceDir=true&deleteDataDir=true
+136573 ERROR (qtp12209492-21) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash33_shard2_replica1]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+136575 INFO  (qtp12209492-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash33_shard2_replica1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=3
+136579 ERROR (OverseerThreadFactory-8-thread-2-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8986/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash33_shard2_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+136580 ERROR (OverseerThreadFactory-8-thread-2-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8983/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash33_shard4_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+136582 ERROR (OverseerThreadFactory-8-thread-2-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8984/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash33_shard3_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+136583 ERROR (OverseerThreadFactory-8-thread-2-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8985/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash33_shard1_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+136634 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"delete",
+  "name":"flash33"} current state version: 40
+136786 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to delete_collection /collections/flash33/state.json
+137222 INFO  (zkCallback-4-thread-70-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A collections change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections], has occurred - updating...
+137501 INFO  (OverseerThreadFactory-8-thread-2-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerTaskProcessor Overseer Collection Message Handler: Message id:/overseer/collection-queue-work/qn-0000000040 complete, response:{failure={192.168.1.27:8986_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash33_shard2_replica1],192.168.1.27:8983_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash33_shard4_replica1],192.168.1.27:8984_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash33_shard3_replica1],192.168.1.27:8985_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash33_shard1_replica1]}}
+138573 INFO  (OverseerCollectionConfigSetProcessor-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.OverseerTaskQueue Response ZK path: /overseer/collection-queue-work/qnr-0000000040 doesn't exist.  Requestor may have disconnected from ZooKeeper
+153842 INFO  (OverseerCollectionConfigSetProcessor-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.OverseerTaskProcessor Overseer Collection Message Handler: Get the message id:/overseer/collection-queue-work/qn-0000000042 message:{
+  "name":"flash44",
+  "operation":"delete"}
+153842 INFO  (OverseerThreadFactory-8-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler OverseerCollectionMessageHandler.processMessage : delete , {
+  "name":"flash44",
+  "operation":"delete"}
+153844 INFO  (OverseerThreadFactory-8-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Executing Collection Cmd : action=UNLOAD&deleteInstanceDir=true&deleteDataDir=true
+153856 ERROR (qtp12209492-14) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash44_shard1_replica1]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+153856 INFO  (qtp12209492-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash44_shard1_replica1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=6
+153858 ERROR (OverseerThreadFactory-8-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8984/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash44_shard1_replica2]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+153862 ERROR (OverseerThreadFactory-8-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8983/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash44_shard2_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+153864 ERROR (OverseerThreadFactory-8-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8985/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash44_shard2_replica2]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+153865 ERROR (OverseerThreadFactory-8-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8983/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash44_shard4_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+153867 ERROR (OverseerThreadFactory-8-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8984/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash44_shard3_replica2]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+153868 ERROR (OverseerThreadFactory-8-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8986/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash44_shard1_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+153870 ERROR (OverseerThreadFactory-8-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8985/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash44_shard4_replica2]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+153865 ERROR (qtp12209492-12) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash44_shard3_replica1]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.execute(ExecuteProduceConsume.java:102)
+	at org.eclipse.jetty.io.ManagedSelector.run(ManagedSelector.java:137)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+153871 INFO  (qtp12209492-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash44_shard3_replica1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=19
+153873 ERROR (OverseerThreadFactory-8-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8986/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash44_shard3_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+153924 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"delete",
+  "name":"flash44"} current state version: 40
+154075 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to delete_collection /collections/flash44/state.json
+154415 INFO  (zkCallback-4-thread-64-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A collections change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections], has occurred - updating...
+154811 INFO  (OverseerThreadFactory-8-thread-3-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerTaskProcessor Overseer Collection Message Handler: Message id:/overseer/collection-queue-work/qn-0000000042 complete, response:{failure={192.168.1.27:8984_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash44_shard1_replica2],192.168.1.27:8983_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash44_shard2_replica1],192.168.1.27:8985_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash44_shard2_replica2],192.168.1.27:8983_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash44_shard4_replica1],192.168.1.27:8984_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash44_shard3_replica2],192.168.1.27:8986_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash44_shard1_replica1],192.168.1.27:8985_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash44_shard4_replica2],192.168.1.27:8986_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash44_shard3_replica1]}}
+155852 INFO  (OverseerCollectionConfigSetProcessor-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.OverseerTaskQueue Response ZK path: /overseer/collection-queue-work/qnr-0000000042 doesn't exist.  Requestor may have disconnected from ZooKeeper
+164976 INFO  (OverseerCollectionConfigSetProcessor-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.OverseerTaskProcessor Overseer Collection Message Handler: Get the message id:/overseer/collection-queue-work/qn-0000000044 message:{
+  "name":"flash55",
+  "operation":"delete"}
+164977 INFO  (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler OverseerCollectionMessageHandler.processMessage : delete , {
+  "name":"flash55",
+  "operation":"delete"}
+164978 INFO  (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Executing Collection Cmd : action=UNLOAD&deleteInstanceDir=true&deleteDataDir=true
+164987 ERROR (qtp12209492-19) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash55_shard1_replica4]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+164988 INFO  (qtp12209492-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash55_shard1_replica4&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=0
+165005 ERROR (qtp12209492-17) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash55_shard2_replica4]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+165008 INFO  (qtp12209492-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash55_shard2_replica4&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=3
+165011 ERROR (qtp12209492-20) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash55_shard3_replica4]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+165012 INFO  (qtp12209492-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash55_shard3_replica4&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=0
+165013 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8986/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash55_shard1_replica4]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165025 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8983/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash55_shard1_replica3]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165030 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8985/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash55_shard2_replica2]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165031 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8984/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash55_shard1_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165033 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8985/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash55_shard1_replica2]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165033 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8983/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash55_shard2_replica3]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165033 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8986/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash55_shard2_replica4]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165034 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8983/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash55_shard4_replica3]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165034 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8984/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash55_shard2_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165034 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8986/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash55_shard3_replica4]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165034 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8983/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash55_shard3_replica3]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165034 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8984/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash55_shard3_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165035 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8985/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash55_shard4_replica2]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165035 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8985/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash55_shard3_replica2]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165036 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8984/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash55_shard4_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165019 ERROR (qtp12209492-18) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash55_shard4_replica4]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+165036 INFO  (qtp12209492-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash55_shard4_replica4&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=18
+165037 ERROR (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8986/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash55_shard4_replica4]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+165081 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"delete",
+  "name":"flash55"} current state version: 40
+165244 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to delete_collection /collections/flash55/state.json
+165610 INFO  (zkCallback-4-thread-74-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A collections change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections], has occurred - updating...
+165953 INFO  (OverseerThreadFactory-8-thread-4-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerTaskProcessor Overseer Collection Message Handler: Message id:/overseer/collection-queue-work/qn-0000000044 complete, response:{failure={192.168.1.27:8986_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash55_shard1_replica4],192.168.1.27:8983_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash55_shard1_replica3],192.168.1.27:8985_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash55_shard2_replica2],192.168.1.27:8984_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash55_shard1_replica1],192.168.1.27:8985_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash55_shard1_replica2],192.168.1.27:8983_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash55_shard2_replica3],192.168.1.27:8986_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash55_shard2_replica4],192.168.1.27:8983_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash55_shard4_replica3],192.168.1.27:8984_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash55_shard2_replica1],192.168.1.27:8986_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash55_shard3_replica4],192.168.1.27:8983_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8983/solr: Cannot unload non-existent core [flash55_shard3_replica3],192.168.1.27:8984_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash55_shard3_replica1],192.168.1.27:8985_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash55_shard4_replica2],192.168.1.27:8985_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash55_shard3_replica2],192.168.1.27:8984_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8984/solr: Cannot unload non-existent core [flash55_shard4_replica1],192.168.1.27:8986_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash55_shard4_replica4]}}
+167011 INFO  (OverseerCollectionConfigSetProcessor-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.OverseerTaskQueue Response ZK path: /overseer/collection-queue-work/qnr-0000000044 doesn't exist.  Requestor may have disconnected from ZooKeeper
+179005 INFO  (OverseerCollectionConfigSetProcessor-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.OverseerTaskProcessor Overseer Collection Message Handler: Get the message id:/overseer/collection-queue-work/qn-0000000046 message:{
+  "name":"flash",
+  "operation":"delete"}
+179006 INFO  (OverseerThreadFactory-8-thread-5-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler OverseerCollectionMessageHandler.processMessage : delete , {
+  "name":"flash",
+  "operation":"delete"}
+179008 INFO  (OverseerThreadFactory-8-thread-5-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Executing Collection Cmd : action=UNLOAD&deleteInstanceDir=true&deleteDataDir=true
+179014 ERROR (qtp12209492-16) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Cannot unload non-existent core [flash_shard1_replica1]
+	at org.apache.solr.core.CoreContainer.unload(CoreContainer.java:1000)
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$1(CoreAdminOperation.java:136)
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:1056)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:365)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:156)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:658)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:440)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+179015 INFO  (qtp12209492-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=flash_shard1_replica1&qt=/admin/cores&deleteDataDir=true&action=UNLOAD&wt=javabin&version=2} status=400 QTime=1
+179016 ERROR (OverseerThreadFactory-8-thread-5-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8986/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash_shard1_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+179017 ERROR (OverseerThreadFactory-8-thread-5-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerCollectionMessageHandler Error from shard: http://192.168.1.27:8985/solr
+org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException: Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash_shard2_replica1]
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:592)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:261)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:250)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1219)
+	at org.apache.solr.handler.component.HttpShardHandler.lambda$submit$0(HttpShardHandler.java:195)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+179065 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"delete",
+  "name":"flash"} current state version: 40
+179226 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.ZkStateWriter going to delete_collection /collections/flash/state.json
+179423 INFO  (zkCallback-4-thread-65-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A collections change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/collections], has occurred - updating...
+179956 INFO  (OverseerThreadFactory-8-thread-5-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.OverseerTaskProcessor Overseer Collection Message Handler: Message id:/overseer/collection-queue-work/qn-0000000046 complete, response:{failure={192.168.1.27:8986_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8986/solr: Cannot unload non-existent core [flash_shard1_replica1],192.168.1.27:8985_solr=org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:Error from server at http://192.168.1.27:8985/solr: Cannot unload non-existent core [flash_shard2_replica1]}}
+181037 INFO  (OverseerCollectionConfigSetProcessor-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.OverseerTaskQueue Response ZK path: /overseer/collection-queue-work/qnr-0000000046 doesn't exist.  Requestor may have disconnected from ZooKeeper
+195152 INFO  (zkCallback-4-thread-66-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [4])
+195152 INFO  (zkCallback-4-thread-65-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [4])
+195156 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"downnode",
+  "node_name":"192.168.1.27:8983_solr"} current state version: 40
+195156 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator DownNode state invoked for node: 192.168.1.27:8983_solr
+195159 INFO  (zkCallback-4-thread-66-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (4) -> (3)
+195162 INFO  (zkCallback-4-thread-65-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (3)
+201001 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"downnode",
+  "node_name":"192.168.1.27:8984_solr"} current state version: 40
+201001 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator DownNode state invoked for node: 192.168.1.27:8984_solr
+201002 INFO  (zkCallback-4-thread-66-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+201002 INFO  (zkCallback-4-thread-65-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [3])
+201013 INFO  (zkCallback-4-thread-66-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (2)
+201043 INFO  (zkCallback-4-thread-65-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (2)
+206791 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer processMessage: queueSize: 1, message = {
+  "operation":"downnode",
+  "node_name":"192.168.1.27:8985_solr"} current state version: 40
+206792 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.o.NodeMutator DownNode state invoked for node: 192.168.1.27:8985_solr
+206792 INFO  (zkCallback-4-thread-66-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [2])
+206793 INFO  (zkCallback-4-thread-65-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [2])
+206796 INFO  (zkCallback-4-thread-66-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (1)
+206826 INFO  (zkCallback-4-thread-65-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (1)
+212506 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@492138a{HTTP/1.1,[http/1.1]}{0.0.0.0:8986}
+212506 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=688726285
+212506 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.1.27:8986_solr as DOWN
+212554 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=241402837565112334-192.168.1.27:8986_solr-n_0000000051) closing
+212554 INFO  (OverseerStateUpdate-241402837565112334-192.168.1.27:8986_solr-n_0000000051) [   ] o.a.s.c.Overseer Overseer Loop exiting : 192.168.1.27:8986_solr
+212573 INFO  (zkCallback-4-thread-68-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [1])
+212573 INFO  (zkCallback-4-thread-65-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader A live node change: [WatchedEvent state:SyncConnected type:NodeChildrenChanged path:/live_nodes], has occurred - updating... (live nodes size: [1])
+212575 WARN  (zkCallback-4-thread-68-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader ZooKeeper watch triggered, but Solr cannot talk to ZK: [KeeperErrorCode = Session expired for /live_nodes]
+212575 WARN  (zkCallback-4-thread-65-processing-n:192.168.1.27:8986_solr) [   ] o.a.s.c.c.ZkStateReader ZooKeeper watch triggered, but Solr cannot talk to ZK: [KeeperErrorCode = Session expired for /live_nodes]
+212578 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@6fc6f14e{/solr,null,UNAVAILABLE}{/Users/mmarzougui/Documents/tools/solr-6.2.1/server/solr-webapp/webapp}
+212581 WARN  (ShutdownMonitor) [   ] o.e.j.s.ServletContextHandler ServletContextHandler.setHandler should not be called directly. Use insertHandler or setSessionHandler etc.
